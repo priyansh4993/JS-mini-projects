@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>music player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/84e6ae6eae.js" 
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="468-thumbnail (1).png" class="song-img">
+            <h1>Despacito</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <audio  id="song">
+                <source src="El Billete - Edgar Lopez and Quincas Moreira.mp3" type="">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playpause()"><i class="fa-solid fa-play" id="ctrlicon"></i></div>
+                <div><i class="fa-solid fa-forward"></i>    </div>
+            </div>
+        </div>
+    </div>
+    <script src="practice.js"></script>
+</body>
+</html>
