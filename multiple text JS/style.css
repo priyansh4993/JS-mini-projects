@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    background: gray;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.container .text{
+    position: relative;
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.container .text.first-text{
+    color: rgb(0, 0, 0);
+}
+
+.text.second-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    border-left: 2px solid #4070f4;
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate{
+    40%, 60%{
+        left:100%
+    }
+    100%{
+        left: 0%;
+    }
+}
