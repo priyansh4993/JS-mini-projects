@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #33ffcf;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.card{
+    background: white;
+    height: 380px;
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+
+
+.card .content{
+    color: #202020;
+    text-align: center;
+    transform-style: preserve-3d;
+}
+
+.content .user{
+    height: 100px;
+    width: 100px;
+    background: #33ffcf;
+    border: 1px solid #1affc9;
+    border-radius: 50%;
+    margin: 10px auto;
+    transform: translateZ(50px);
+}
+
+.user .fa-user{
+    color: white;
+    font-size: 40px;
+    line-height: 100px;
+}
+
+.content header{
+    margin: 20px 0;
+    font-size: 32px;
+    font-weight: 600;
+    transform-style: preserve-3d;
+}
+
+
+.content .follow-us{
+    font-size: 23px;
+    font-weight: 600;
+    transform-style: preserve-3d;
+}
+
+.content .icons{
+    margin: 20px 0 10px 0;
+    transform-style: preserve-3d;
+}
+
+.icons a{
+    margin: 0 4px;
+}
+
+.icons a span{
+    height: 45px;
+    width: 45px;
+    background: #33ffcf;
+    border: 1px solid #1affc9;
+    line-height: 44px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+} 
