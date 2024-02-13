@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hide menu bar on scroll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <label class="logo">designX</label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+    <div class="sec1"></div>
+    <h1>About Section</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laudantium earum laboriosam ratione temporibus sint labore tenetur nesciunt fuga minima ut quia totam minus iusto rem, eum vel eaque dolore. Similique aspernatur laboriosam aperiam! Ratione quam possimus id atque magni doloremque nam quaerat totam nostrum fuga autem itaque iure ipsam cupiditate quod corporis voluptatem rerum vel enim, magnam earum. Ab aspernatur dolorum, debitis aut, eum dicta ea esse illo fugit ullam veritatis aperiam enim distinctio. Quis voluptatibus illo sapiente libero velit modi repudiandae quas, cum nulla sed itaque illum perferendis nemo amet autem in, assumenda ipsum sint deleniti. Et neque iusto fugit harum provident reiciendis ipsa perferendis nobis deleniti quo odit earum at exercitationem perspiciatis excepturi error ea repudiandae sit molestiae laborum dolore doloribus, quas inventore alias! Necessitatibus commodi libero architecto, id autem quaerat repudiandae similique possimus accusantium vero voluptatem molestiae cumque vitae odit minima! Est, consequatur! Voluptas quam, exercitationem debitis quibusdam est ipsa suscipit laboriosam eius, natus ab possimus atque cumque consequatur alias? Obcaecati sunt, excepturi, sed iste cum dolorem repellat officiis ullam perferendis quisquam voluptate libero, laboriosam soluta aperiam et nam eveniet deserunt earum sequi nemo incidunt harum? Eaque adipisci fuga tempore laboriosam porro ipsam, vero quis dignissimos vitae, minus ratione id. Ipsa, quam. Neque, sapiente tempora. Hic ullam tenetur porro, dolores alias doloremque iure accusantium laboriosam atque sunt natus soluta quod, iusto, eum enim tempore. Qui suscipit similique obcaecati asperiores distinctio iste vero quasi a harum! Hic dignissimos voluptatem, sequi, at ipsa alias omnis quo et minima nam reiciendis. Hic perspiciatis culpa, soluta dolorum in dicta, fuga, repellat sit est aspernatur adipisci commodi inventore minus reprehenderit. Perspiciatis quibusdam, officiis distinctio consequuntur, quidem enim similique nostrum maiores quam saepe, ratione error repellat consequatur ipsum est quas. Sint, ea iusto. Dolores asperiores magni voluptatem beatae odit atque quas nemo!</p>
+    <div class="sec2"></div>
+    <h1> Services Section</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed pariatur maxime aliquid numquam repellendus eius quod ratione distinctio animi dignissimos laboriosam dolorum obcaecati quam laudantium iusto quidem adipisci reiciendis ipsa aperiam explicabo, esse molestias rem quo. Aut est similique iure vero aliquam. Corrupti nihil iste facilis natus, praesentium consequatur perspiciatis recusandae ducimus ex? Et, explicabo voluptate! Quidem, autem distinctio. Laboriosam molestiae inventore reiciendis voluptatem necessitatibus! Assumenda accusantium recusandae a labore quisquam incidunt mollitia dolore nesciunt. Ex, eveniet quas libero necessitatibus nemo unde, eos nostrum provident iure ea tenetur dignissimos nulla delectus recusandae ut aliquam, laboriosam praesentium totam quisquam corporis eius. Deleniti porro a impedit? Harum, ut voluptate quo rem incidunt laborum quae architecto reiciendis. Quis ea repellat officia, aperiam vero nam atque amet deleniti assumenda at, fugit earum dicta corporis commodi ipsam incidunt maiores repellendus ipsum consectetur, ab recusandae sed eos? Voluptates odio atque ex. Amet aliquid explicabo accusamus, hic praesentium, eum eius asperiores quia inventore unde nisi eligendi excepturi? Numquam, officia ullam? Iusto soluta perspiciatis est consectetur commodi! Odit corrupti facilis explicabo sint iste officia itaque ex, saepe doloribus perspiciatis obcaecati in, nisi eos labore et eveniet! Dolorem adipisci, optio ipsum facere sint ex magni alias, eligendi culpa in assumenda corrupti maxime repellendus tempore deleniti animi aliquid inventore molestias voluptas? Voluptas cumque harum eum est magni autem, modi repellendus delectus soluta nemo provident ducimus alias id, commodi recusandae voluptatum rerum perspiciatis, explicabo ipsam vitae? Impedit debitis est molestiae ea ut, provident consectetur laudantium ad tempora voluptate alias quae repellendus, nostrum minima saepe facilis nihil eius maiores doloribus inventore, unde commodi cupiditate molestias. Tenetur, maxime incidunt. Nisi, unde corporis nesciunt minus perferendis maiores doloribus deleniti corrupti cumque quasi illo voluptas voluptatum consequuntur explicabo, harum culpa. Tempora praesentium aut exercitationem expedita dignissimos laborum quam alias ab? Reprehenderit nam commodi voluptates id!</p>
+    <script>
+        var scroll1 = window.pageYOffset;
+    window.onscroll = function(){
+    var scroll2 = window.pageYOffset;
+    if(scroll1 > scroll2){
+        document.querySelector('nav').style.top = "0";
+    }else{
+        document.querySelector('nav').style.top = "-100px";
+    }
+    scroll1 = scroll2;
+};
+    </script>
+</body>
+</html>
