@@ -1,0 +1,79 @@
+ *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(to top, #56e2d7 0%, #58cff1 100%);
+}
+
+.wrapper{
+    background-color: white;
+    padding: 20px;
+    width: 450px;
+    border-radius: 5px;
+}
+
+.wrapper form{
+    height: 55px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+form i{
+    position: absolute;
+    width: 55px;
+    text-align: center;
+    font-size: 23px;  
+    color: #c4c4c4;
+    pointer-events: none; 
+}
+
+form input:valid ~ i{
+    color: #58cff1;
+}
+
+
+form input{
+    height:100%;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 0 10px 0 45px;
+    font-size: 20px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+form input:focus,
+form input:valid{
+    border-color: #58cff1;
+}
+
+form input::placeholder{
+    color: #c4c4c4;
+}
+
+form .counter{
+    position: absolute;
+    right: 3px;
+    width: 55px;
+    text-align: center;
+    font-size: 20px;  
+    color: #c4c4c4;
+    pointer-events: none; 
+    border-left: 1px solid #d8d8d8;
+} 
+
+form input:valid ~ .counter{
+    color: #58cff1;
+    border-color: #58cff1;
+}
